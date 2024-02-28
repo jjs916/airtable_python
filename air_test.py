@@ -5,6 +5,6 @@ at = airtable.Airtable('appOwBfTbJVoMqMff', 'patpNANMFnpCl86sW.636f891f6a657e765
 tmp = at.get('All publications') #tab name
 
 for i in range(len(tmp['records'])):
-    print(tmp['records'][i]['fields']['Title'])#get 'Title' field of All publication tab.
+    print(tmp['records'][i]['fields']['Title'])#get 'Title' field from 'All publication' tab of ONE Munich base.
     
 #ToDo: check for various field types, how to sort/filter
